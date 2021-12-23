@@ -1,0 +1,549 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap');
+
+
+*{
+   margin:0;
+   padding: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+body{
+    height: 2400px;
+    background-color: #161B27;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+   
+}
+
+.navbar {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #161B27;
+    width:100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #2e2f33;  
+}
+
+.icon-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-bar a {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px 30px;
+    
+   
+}
+
+.icon-bar a i {
+    color: blue;
+}
+
+.menu-items{
+   font-weight: large;
+   color: #999999;
+   padding-top: 5px ;
+}
+
+.icon-bar a:hover {
+    background-color: #2E2F32;
+    color: #fff;
+}
+.home{
+    width: 100%;
+    height: 1260px;
+    text-decoration: none;
+    
+}
+.imgforhome{
+    position: absolute;
+    margin-left:60%;
+    position: absolute;
+    top: 16em;
+    padding: 10px;
+    
+
+}
+.imgforhome img {
+    width: 500px;
+    height: 400px; 
+    margin-left: 20px;
+    border-radius: 5%;
+}
+
+.hometext h1 {
+    line-height: 1.4em;
+    font-size: 40px;
+    color:  #fff;
+    margin-left: 10%;
+    position: absolute;
+    top: 8em;
+}
+.hometext span{
+    color: #F18124;
+}
+
+.hometext p{
+    font-family: 'Cardo', serif;
+    font-size: 20px;
+    text-align: start;
+    color: #fff;
+    margin-top: 23rem;
+    margin-left: 10%;
+    line-height: 30px;
+}
+
+.button a{
+    color:#fff;
+    display: flex;
+    width:140px;
+
+}
+
+.button a:hover{
+    color:#fff;
+}
+.btn{
+   padding: 10px 22px; 
+   margin-top: 40px;
+   margin-left: 10%;
+   font-size: 14px;
+   background-color:#F18124;
+}
+
+.btn:hover {
+    background-color: #2E2F32;
+    color: #fff;
+}
+.things{
+    font-size:20px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: 25%;
+   
+}
+.things h1,h2{
+    font-family: 'Cardo', serif;
+    color: #fff;
+    font-size:40px;
+    line-height:2em;
+    
+}
+.things h2{
+    margin-left: 1%;
+}
+
+.things span {
+    color: #F18124;
+    border-bottom: 4px solid #F18124;
+}
+
+.products {
+    height: 600px;
+    width : 100%;
+    display: flex;
+    margin-top:17%;
+    padding:20px;
+
+}
+.cars
+{   
+    width:374px;
+    margin-left: 10px;
+    
+}
+/* .cars:hover
+{   
+    width:374px;
+    margin-left: 10px;
+    transition: 0.5s;
+    transform: scale(1.3);
+} */
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+  
+    }
+
+.car {
+    background-color:#2E2F32;
+    width:300px;
+    height: 85%;
+    margin-left: 20px;
+    display: flex;
+    margin-top:10%;
+   
+}
+.car h1 {
+    font-size:35px;
+    font-family: 'Montserrat', sans-serif;
+    color: #F0FFFF;   
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 17%;
+}
+.car p {
+    font-size:15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    color: #F0FFFF;   
+    margin-left: 2px;
+    position: absolute;
+    margin-top: 22%;
+}
+
+
+.vans {
+    width:374px;
+    margin-left: 10px;
+    
+}
+/* .vans:hover
+{   
+    width:374px;
+    margin-left: 10px;
+    transition: 0.5s;
+    transform: scale(1.2);
+} */
+.van {
+    background-color:#2E2F32;
+    width:300px;
+    height: 85%;
+    margin-left: 20px;
+    display: flex;
+    margin-top:10%;
+    
+}
+.van h1 {
+    font-size:35px;
+    font-family: 'Montserrat', sans-serif;
+    color: #F0FFFF;   
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 17%;
+}
+
+.van p {
+    font-size:15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    color: #F0FFFF;   
+    margin-left: 2px;
+    position: absolute;
+    margin-top: 22%;
+}
+
+.motorbikes{
+    width:374px;
+    margin-left: 10px;
+   
+}
+
+/* .motorbikes:hover
+{   
+    width:374px;
+    margin-left: 10px;
+    transition: 0.5s;
+    transform: scale(1.2);
+} */
+.motorbike{
+    background-color:#2E2F32;
+    width:300px;
+    height: 85%;
+    margin-left: 20px;
+    display: flex;
+    margin-top:10%;
+    
+
+}
+
+.motorbike h1 {
+    font-size:35px;
+    font-family: 'Montserrat', sans-serif;
+    color: #F0FFFF;   
+    margin-left: 45px;
+    position: absolute;
+    margin-top: 17%;
+}
+
+.motorbike p {
+    font-size:15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    color: #F0FFFF;   
+    margin-left: 2px;
+    position: absolute;
+    margin-top: 22%;
+}
+
+.construction-machines {
+    width:374px;
+    margin-left: 10px;
+
+}
+ /* .construction-machines:hover
+{   
+    width:374px;
+    margin-left: 10px;
+    transition: 0.5s;
+    transform: scale(1.2);
+}  */
+.construction-machine{
+    background-color:#2E2F32;
+    width:300px;
+    height: 85%;
+    margin-left: 20px;
+    display: flex;
+    margin-top:10%;
+    
+
+}
+
+.construction-machine h1 {
+    font-size:35px;
+    font-family: 'Montserrat', sans-serif;
+    color: #F0FFFF;    ;
+    margin-left: 20px;
+    position: absolute;
+    margin-top: 17%;
+}
+.construction-machine p {
+    font-size:15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    color: #F0FFFF;   
+    margin-left: 2px;
+    position: absolute;
+    margin-top: 22%;
+}
+
+
+.car-img img{
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.van-img img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.motorbike-img img{
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.const-machine-img img{
+
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button1{
+    height: 50px;
+    position: absolute;
+    margin-left: 5%;
+    
+    
+}
+
+.button1 a {
+    color:#fff;
+    display: flex;
+    width:100%;
+    
+}
+.button1 a:hover{
+    color:#fff;
+}
+
+.btn1{
+    padding: 10px 22px; 
+    font-size: 14px;
+    background-color:#F18124;
+    margin-top: 290%;
+    
+    
+ }
+
+ .btn1:hover {
+    background-color: #999999;
+    color: #fff;
+}
+
+
+/*  Footer Area*/
+
+.footer{
+    background-color:#16171A ;
+     border-top: 2px solid #999; 
+    width: 100%;
+    height:600px;
+    position: absolute;
+    margin-top: 20%;
+}
+
+.row{
+    width: 100%;
+    height:400px;
+    position: absolute;
+    margin-top: 2%;
+}
+
+.content{
+    width:100%;
+    height:354px;
+    position: absolute;
+    margin-top:3%;
+    display: flex;
+}
+
+.about-us{
+    width: 300px;
+    height:354px;
+    position: absolute;
+    margin-left: 20px; 
+}
+.about-us h1{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    position: relative;
+    margin-left: 30%;
+}
+.about-us p{
+    width: 400px;
+    font-size: 19px;
+    font-family: 'Cardo', serif;
+    color: #fff;
+    margin-left: 30%;
+    margin-top: 40px;
+}
+
+.Pages{
+    width:300px;
+    height:354px;
+    position: absolute;
+    margin-left: 600px;
+
+}
+.Pages h1{
+    position: relative;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    margin-left: 35%;
+    margin-bottom: 20%;
+}
+.Pages a {
+    color:#999999;
+    display:flex;
+    margin-top: 30px;
+    margin-left: 35%;
+}
+.Pages a i {
+    color: #fff;
+}
+.Pages a :hover{
+    color:#999999;
+}
+
+
+.Contact{
+    width:300px;
+    height:354px;
+    position: absolute;
+    margin-left: 1200px;
+}
+
+.Contact h1{
+    position: relative;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    margin-left: 25%;
+    margin-bottom: 20%;
+}
+
+
+.Contact p{
+    width: 100%;
+    position: relative;
+    font-size: 19px;
+    font-family: 'Cardo', serif;
+    color: #fff;
+    margin-left: 2%;
+    margin-top: 50px;
+}
+
+.Contact a {
+    color:#fff;
+    margin-top: 30px;
+    margin-left: 25%;
+}
+.Contact a i:hover{
+    color:#999999;
+}
+
+/* follow us */
+.followus{
+    width: 400px;
+    height: 200px;
+    margin-top: 370px;
+    margin-left: 35%;
+    
+}
+
+.followus p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.followus a{
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    color:#fff;
+    margin-left: 15%;
+    transform:translate-y(520);
+}
+
+.followus a i:hover{
+    color:#999999;
+}
+
+
+/*Media Queriees Home*/ 
+@media  and (max-width:760px) {
+    body{
+   
+    
+}
+
+/*Meadia Queriees Contact*/
+
+
+
+
+ */
