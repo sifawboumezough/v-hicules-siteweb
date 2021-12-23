@@ -535,10 +535,8 @@ body{
 
 
 /*Media Queriees Home*/ 
-@media  and (max-width:760px) {
-    body{
+@media screen and (max-width:760px) {
    
-    
 }
 
 /*Meadia Queriees Contact*/
@@ -546,4 +544,3 @@ body{
 
 
 
- */
