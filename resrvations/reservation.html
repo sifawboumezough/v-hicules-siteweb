@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RESERVATION</title>
+    <link rel="stylesheet" href="style1.css">
+    <meta
+        name="description"           
+        content="reservation page">
+        <meta name="keywords" content="cars,location">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome 5CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body> 
+    <header>
+        <!-- navigation bar starts  -->
+         <div class="navbar">
+            <!-- Icons : using font awesome -->
+            <div class="icon-bar">
+                <a href="../index.html"><i class="fas fa-home">
+                    <div class="menu-items">
+                        Home
+                    </div> 
+                </i></a>
+
+                <a href="../Contact/index.html"><i class="fas fa-id-card-alt">
+                    <div class="menu-items">
+                        Contact Us
+                    </div> 
+                </i></a>
+
+                <a href="../gallery/gallery.html"><i class="fas fa-images">
+                    <div class="menu-items">
+                        Gallery
+                    </div> 
+                </i></a>
+
+                <a href="#"><i class="far fa-truck">
+                    <div class="menu-items">
+                        Reservation
+                    </div> 
+                </i></a>
+
+                <a href="#"><i class="fas fa-search">
+                    <div class="menu-items">
+                    Search
+                    </div> 
+                </i> 
+             </div>
+    </header>
+    <!-- navigation ends  -->
+    
+   
+
+    <h1>type of vehicles</h1>
+
+    <div class="type">
+        <img class="slide" onclick="ty(this.id)" id="Moto" value="Moto" src="images/moto1.jpeg" alt="motorcycle">
+        <img class="slide" onclick="ty(this.id)" id="Compact" value="compact" src="images/compacte.png" alt="compact-car">
+        <img class="slide" onclick="ty(this.id)" id="citadine" src="images/citadine.png" alt="citadine-car">
+        <img class="slide" onclick="ty(this.id)" id="utilitaire" src="images/utilitaire.png" alt="utilitaire-car">
+        <img class="slide" onclick="ty(this.id)" id="Berlin" src="images/berlin.png" alt="berlin-car">
+        <img class="slide" onclick="ty(this.id)" id="Truck" src="images/truck.png" alt="truck">
+        <img class="slide" onclick="ty(this.id)" id="cm" src="images/cm.png" alt="construction-machine">
+    </div>
+
+    <!-----------------feul----------------->
+    <h1><span>Fuel T</span>ype</h1>
+    <form class="feul">
+        <div class="carburant">
+            <input type="radio" id="essence" name="radio" value="0.14" onclick="fuelP(this.value)">
+            <label for="essence">Essence</label>
+        </div>
+        <div class="carburant">
+            <input type="radio" id="diesel" name="radio" value="0.21" onclick="fuelP(this.value)">
+            <label for="diesel">Diesel</label>
+        </div>
+        <div class="carburant">
+            <input type="radio" id="electrique" name="radio" value="0.05" onclick="fuelP(this.value)">
+            <label for="electrique">Electrique</label>
+        </div>
+        <div class="carburant">
+            <input type="radio" id="hybride" name="radio" value="0.09" onclick="fuelP(this.value)">
+            <label for="hybride">Hybride</label>
+        </div>
+    </form>
+
+    <!-----------------------gear box----------------------->
+    <h1><span>Select Your</span> Gear<span> box</span> type</h1>
+    <form class="gear-box">
+        <div class="gear">
+            <input type="radio" id="manual" name="gear" value="manual">
+            <label for="manual">Manual</label>
+        </div>
+        <div class="gear">
+            <input type="radio" id="automatic" name="gear" value="automatic">
+            <label for="automatic">Automatic</label>
+        </div>
+    </form>
+
+    <!-----------------------Duration of Reserve----------------------->
+
+    <h1><span>Dura</span>tion of<span> Reserv</span>ation</h1>
+    <div class="duration">
+         
+        <div class="du">
+            <label for="date">Number of days:</label>
+            <input type="number" id="days" min="1">
+           
+        </div>
+    </div>
+    <div class="btn1">
+        <input type="submit" name="submit" value="Submit" onclick="calc()">
+    </div>
+
+
+     <!-- footer starts -->
+     <div class="footer">
+        <div class="row">
+            <div class="content1">
+                <!-- About Us -->
+                <div class="about-us">
+                    <h1>About us</h1>
+                    <p> We’re always looking for passionate,<br> talented folks to join our team.</p>
+                    <p>We wantto help bring students and<br> unique startups together</p>
+                </div>
+
+                <div class="Pages"> 
+                    <h1>Pages</h1>
+                        <a href="#"><i class="fas fa-chevron-right">Home</i>
+                        <a href="#"><i class="fas fa-chevron-right">Contact</i>
+                        <a href="#"><i class="fas fa-chevron-right">Gallery</i>
+                        <a href="#"><i class="fas fa-chevron-right">Reservation</i> 
+                </div>
+                <div class="Contact">
+                    <h1>Contact Us</h1>
+                    <p>Our company is located in Morocco</p> <br>
+                            <a href="#"><i class="fas fa-chevron-right"> Safi</i> <br> <br>
+                            <a href="#"><i class="fas fa-chevron-right">Casablanca</i> <br> <br>
+                            <a href="#"><i class="fas fa-chevron-right">Rabat</i> <br> <br>
+                            <a href="#"><i class="fas fa-chevron-right">Kenitra</i> <br> <br>
+                </div> 
+                <div class="followus">
+                    <p>Connect With Us</p>
+                    <a href="#"><i class="fab fa-facebook-f"> 7upcmp</i>
+                    <a href="#"><i class="fab fa-twitter"> 7upcmp</i>
+                    <a href="#"><i class="fab fa-linkedin-in"> 7upcmp</i>
+                    <a href="#"><i class="fab fa-instagram"> 7upcmp</i>
+
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+        <!-- footer ends -->
+
+     
+
+<script src="main.js"></script>
+</body>
+</html>

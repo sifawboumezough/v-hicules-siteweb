@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+ }
+
+ body{
+    height: 2400px;
+    background-color: #161B27;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #161B27;
+    width:100%;
+    height:100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #2e2f33;  
+}
+
+.icon-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-bar a {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px 30px;
+    
+   
+}
+
+.icon-bar a i {
+    color: blue;
+}
+
+.menu-items{
+   font-weight: large;
+   color: #999999;
+   padding-top: 5px ;
+}
+
+.icon-bar a:hover {
+    background-color: #2E2F32;
+    color: #fff;
+}
+
+section h1{
+    color: #fff;
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    
+}
+ section h1 span {
+    font-family: 'Cardo', serif;
+    font-size: 30px;
+    word-spacing: 40px;
+    border-bottom: 4px solid #F18124;
+    color: #F18124;
+}
+section p {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+section p span {
+    color: #999999;
+    font-weight: bold;
+}
+section h2{
+    color: #fff;
+    padding-left: 12%;
+    padding-top: 2%;
+    border-top: 2px solid #999999;
+}
+section h2 span {
+    color: aquamarine;
+    
+} 
+
+
+
+.vehicules{
+    display: flex;
+    padding: 0px 10px;
+    width: 100%;
+    height:2300px;
+    background-color: #F18124;
+}
+.cars {
+    margin: 10px ;
+    width: 100%;
+    height:400px;
+    background-color: blue;
+}
+.citadine{
+    width: 100%;
+    background-color: burlywood;
+
+}
+
+.citadine img{
+    width: 506.33px;
+} 
+
+.Proprities h1{
+    color: #fff;
+}
+
+
+
+.type img{
+    height: 230px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+
+.type{
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: -20px;
+    height: 350px;
+}
+
+.type::-webkit-scrollbar{
+    display:none;
+}
+
+.icons p{
+    color: red;
+}
+
+
+.slide{
+    display: inline-block;
+}
+
+.slide:hover{
+    height: 280px;
+    border: 5px solid #999999;
+}
+.typeof h1 {
+    font-size: 30px;
+    color:#F18124;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+
+/*  Footer Area*/
+.footer{
+    background-color:#16171A ;
+    border-top: 2px solid #999; 
+    width: 100%;
+    height:532px;
+    position: absolute;
+    margin-top: 20%;
+}
+
+.row{
+    width: 100%;
+    height:400px;
+    position: absolute;
+    margin-top: 2%;
+}
+
+.content1{
+    width:100%;
+    height:354px;
+    position: absolute;
+    margin-top:3%;
+    display: flex;
+  
+}
+
+.about-us{
+    width: 300px;
+    height:354px;
+    position: absolute;
+    margin-left: 20px; 
+}
+.about-us h1{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    position: relative;
+    margin-left: 30%;
+}
+.about-us p{
+    width: 400px;
+    font-size: 19px;
+    font-family: 'Cardo', serif;
+    color: #fff;
+    margin-left: 30%;
+    margin-top: 40px;
+}
+
+.Pages{
+    width:300px;
+    height:354px;
+    position: absolute;
+    margin-left: 600px;
+
+}
+.Pages h1{
+    position: relative;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    margin-left: -9%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.Pages a {
+    color:#999999;
+    display:flex;
+    margin-top: 30px;
+    margin-left: 35%;
+}
+.Pages a i {
+    color: #fff;
+}
+.Pages a :hover{
+    color:#999999;
+}
+
+
+.Contact{
+    width:300px;
+    height:354px;
+    position: absolute;
+    margin-left: 1200px;
+}
+
+.Contact h1{
+    position: relative;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    margin-left: 25%;
+    margin-bottom: 20%;
+}
+
+
+.Contact p{
+    width: 100%;
+    position: relative;
+    font-size: 19px;
+    font-family: 'Cardo', serif;
+    color: #fff;
+    margin-left: 2%;
+    margin-top: -34px;
+}
+
+.Contact a {
+    color:#fff;
+    margin-top: 30px;
+    margin-left: 25%;
+}
+.Contact a i:hover{
+    color:#999999;
+}
+
+/* follow us */
+ .followus{
+    width: 400px;
+    margin-top: 370px;
+    margin-left: 35%;
+    
+}
+
+.followus p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.followus a{
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    color:#fff;
+    padding: 10px;
+    transform:translate-y(520);
+}
+
+.followus a i:hover{
+    color:#999999;
+}  
+/* footer ends */
+.checkbtn {
+    font-size: 30px;
+    color: #999999;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
