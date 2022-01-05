@@ -536,11 +536,65 @@ body{
 
 
 /*Media Queriees Home*/ 
-@media screen and (max-width:760px) {
-   
+
+@media (max-width:1800px) {
+    .checkbtn{
+        display: none;
+    }
+    
+}
+@media (max-width:550px) {
+    .checkbtn{
+        display: block;
+    }
+    .icon-bar a {
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        height:200px;
+        background: chartreuse;
+        top:80px;
+        left:0;
+        text-align: center;
+    } 
+        
 }
 
-/*Meadia Queriees Contact*/
+@media (max-width:991px) {
+    .icon-bar a i {
+        font-size:16px;
+     
+    }
+    
+}
+
+
+
+
+@media (max-width:640px) {
+    .icon-bar a i {
+     font-size: 16px;
+     
+    }
+    
+}
+@media (max-width:540px) {
+    .icon-bar a i {
+     display: none;
+     
+    }
+    
+}
+
+@media (max-width:800px){
+    .imgforhome img{
+        width:90%;
+    }
+
+}
+
+
+
 
 
 

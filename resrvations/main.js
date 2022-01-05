@@ -54,7 +54,6 @@ function ty(e) {
                        document.querySelector("#hybride").disabled = false;
                        document.querySelector("#essence").disabled = false;
                        document.querySelector("#diesel").disabled = false;
-
                        basePrice = 20;
                        tranPrice = 0.19;
         break;
