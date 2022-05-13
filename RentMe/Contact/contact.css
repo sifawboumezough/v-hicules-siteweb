@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    background-color: #161B27;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:#161B27;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.logo {
+    color: rgb(226,226,226) ;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width:40%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color: #A5C9FF;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    
+}
+.burger {
+    display: none;
+}
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: #A5C9FF;
+    margin:5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right :0px;
+        height:30vh;
+        top: 8vh;
+        background-color: #161B27;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    /* .nav-links li {
+        opacity: 0;
+
+    } */
+    .burger {
+        display: block;
+    }
+    .nav-active {
+        transform: translateX(0%);
+
+    }
+
+
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+}
+
+    /* end of naaav bar  */
+
+.Contact{
+    position:relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#161B27;
+}
+
+.Contact .content1{
+    max-width: 800px;
+    text-align: center;
+ }
+
+
+ .Contact .content1 h2{
+    font-size: 36px;
+    font-weight: 500px;
+    color: #FFF;
+}
+
+.Contact .content1 p {
+    font-weight: 300;
+    color: #fff;
+ }
+
+ .container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+  }  
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    color: #161B27;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 12%;
+    font-size: 22px;
+
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+ 
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: bold;
+    color:#0000FF;
+}
+.contactForm{
+    width:40%;
+    padding:40px;
+    background: #fff; /*change this one later */
+    border-radius: 2%;
+    
+
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #1A2723;
+    font-weight: 700;
+}
+
+.contactForm .inputBox
+{
+    position: relative;
+    width:100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input {
+    width:100%;
+    padding: 5px;
+    font-size:16px;
+    margin : 10px 0;
+    border: none;
+    border-bottom: 3px solid #999;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox textarea {
+    width:100%;
+    padding: 5px;
+    font-size:16px;
+    margin : 10px 0;
+    height: 100px;
+    border-bottom: 3px solid #999;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    font-size:16px;
+    margin : 10px 0;
+    pointer-events: none;
+    transition: 0.6s;
+    color:#999;
+
+}
+
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #2e2e33;
+    font-size: 12px;
+    transform : translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width:100px;
+    background: #F28123;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    
+
+
+}
+.contactForm .inputBox input[type="submit"]:hover {
+    width:100px;
+    background: #2E2F32;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+/* Nav Bar Mobile  */
+     
+.checkbtn{
+    font-size: 30px;  
+    color: #999999;
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+
+  }
+  #check {
+      display: none;
+  }
+
+
+  /* Nav Bar */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+/* Contact Media Querie */
+@media (max-width:1800px) {
+    .checkbtn{
+        display: none;
+    }
+    
+}
+@media (max-width:550px) {
+    .checkbtn{
+        display: block;
+    }
+    /* .icon-bar a {
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        height:200px;
+        background: chartreuse;
+        top:80px;
+        left:0;
+        text-align: center;
+    } */
+        
+}
+
+@media (max-width:991px) {
+    .icon-bar a i {
+        font-size:16px;
+     
+    }
+    
+}
+
+
+
+
+@media (max-width:640px) {
+    .icon-bar a i {
+     font-size: 16px;
+     
+    }
+    
+}
+@media (max-width:540px) {
+    .icon-bar a i {
+     display: none;
+     
+    }
+    
+}
+
+
+@media (max-width : 991px) 
+{
+    .contact
+    {
+        padding:50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .container .contactInfo {
+        margin-bottom: 40px;
+      
+    }
+    .container .contactInfo {
+       width: 100%;
+      
+    }
+    .contactForm{
+        width: 100%;
+    }
+
+
+}
+@media (max-width :500px){
+    .navbar{
+        width:100%;
+    }
+
+}
+
+/* Contact Media Querie Ends */ 
+
+
+
+
+
+ 

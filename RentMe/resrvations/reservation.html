@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RESERVATION</title>
+    <link rel="stylesheet" href="style1.css">
+    <meta
+        name="description"           
+        content="reservation page">
+        <meta name="keywords" content="cars,location">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- font awesome 5CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body> 
+    <nav>
+        <div class="logo">
+            <h4>Rent Car</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Contact/index.html">Contact Us</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
+            <li><a href="#">Reservation</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <section>
+        <div class="containerr">
+                <h3 class="title">Reservation</h3>
+                <div class="input-container ">
+                    <input placeholder="First & Last Name" type="text" name="name" class="input">
+                </div>
+                <div class="input-container">
+                    <input placeholder="Email" type="email" name="email" class="input">
+                    
+                </div>
+                <div class="select">
+                      <select id="cars" name="cars" onchange="Vehicles()" class="input">
+                         <option value="">Select Type of Vehicle</option>
+                         <option value="Moto">Motorbike</option>
+                         <option value="Citadine">Citadine</option>
+                         <option value="Compact">Compact</option>
+                         <option value="Berline">Berline</option>
+                         <option value="Utilitaire">Utilitaire</option>
+                         <option value="Constmachine">Construction Machine</option>
+                         <option value="Truck">Truck</option>
+                    </select>
+                </div>
+                <div class="select">
+                       <!-----------------------gear box----------------------->
+                    <select id="gear" name="cars" onchange="gearbox()" class="input">
+                       <option value="">Select Type of Gear box</option>
+                       <option value="manuelle">Manuelle</option>
+                       <option value="automatique">Automatique</option>
+                  </select>
+                </div>
+              <div class="select">
+                              <!-----------------feul----------------->
+                <select id="feul" name="cars" onchange="fueltype()" class="input">
+                   <option>Fuel</option>
+                   <option  value="electrique">Electrique</option>
+                   <option  value="hybride">Hybride</option>
+                   <option  value="essance">Essance</option>
+                   <option  value="diesel">Diesel</option>
+              </select>
+              <input id="days" type="number" placeholder="Number of Days" class="days">
+          </div>
+          
+                <input  onclick="TotalPrice()" id="submit" type="submit" value="Reserve" class="btn">
+                <div id="displayTotal" class="total"></div>
+        </div>
+    </section>
+   
+
+<script src="main.js"></script>
+<script>
+        const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+            // Toggle nav bar
+        burger.addEventListener('click',()=>
+            {
+                nav.classList.toggle('nav-active');
+             // burger Animation
+             burger.classList.toggle('toggle');
+         });
+    
+       
+    }
+    navSlide();
+</script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+ }
+ body{
+    background-color: #161B27;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color:#161B27;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.logo {
+    color: rgb(226,226,226) ;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width:40%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color: #A5C9FF;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    
+}
+.burger {
+    display: none;
+}
+.burger div {
+    width: 20px;
+    height: 3px;
+    background-color: #A5C9FF;
+    margin:5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:768px) {
+    /* body {
+        overflow-x: hidden;
+    } */
+    .nav-links {
+        position: absolute;
+        right :0px;
+        height:30vh;
+        top: 8vh;
+        background-color: #161B27;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    /* .nav-links li {
+        opacity: 0;
+
+    } */
+    .burger {
+        display: block;
+    }
+    .nav-active {
+        transform: translateX(0%);
+
+    }
+
+
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+}
+section h1{
+    color: #fff;
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    
+}
+ section h1 span {
+    font-family: 'Cardo', serif;
+    font-size: 30px;
+    word-spacing: 40px;
+    border-bottom: 4px solid #F18124;
+    color: #F18124;
+}
+section p {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+section p span {
+    color: #999999;
+    font-weight: bold;
+}
+section h2{
+    color: #fff;
+    padding-left: 12%;
+    padding-top: 2%;
+    border-top: 2px solid #999999;
+}
+section h2 span {
+    color: aquamarine;
+    
+} 
+
+
+
+.vehicules{
+    display: flex;
+    padding: 0px 10px;
+    width: 100%;
+    height:2300px;
+    background-color: #F18124;
+}
+.cars {
+    margin: 10px ;
+    width: 100%;
+    height:400px;
+    background-color: blue;
+}
+.citadine{
+    width: 100%;
+    background-color: burlywood;
+
+}
+
+.citadine img{
+    width: 506.33px;
+} 
+
+.Proprities h1{
+    color: #fff;
+}
+
+
+
+.type img{
+    height: 230px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+
+.type{
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: -20px;
+    height: 350px;
+}
+
+.type::-webkit-scrollbar{
+    display:none;
+}
+
+.icons p{
+    color: red;
+}
+
+
+.slide{
+    display: block;
+}
+
+.slide:hover{
+    height: 280px;
+    border: 5px solid #999999;
+}
+.typeof h1 {
+    font-size: 30px;
+    color:#F18124;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+
+
+
+footer{
+  width: 100%;
+  position: relative;
+  top: 16rem;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .article{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .article p,a{
+  color: #fff;
+}
+footer .article .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .article .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .article p{
+  text-align: justify;
+}
+footer .article .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .article .lower i{
+  padding-right: 16px;
+}
+footer .article .middle{
+  padding-left: 80px;
+}
+footer .article .middle a{
+  line-height: 32px;
+}
+footer .article .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .article .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.article .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .article .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.article .media-icons a:hover{
+  border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #eb2f06;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+@media (max-width:1100px) {
+  footer .article .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .article .box{
+    width: 50%;
+  }
+  .article .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .article .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .article .middle{
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+
+/*Media Queriees Home*/ 
+
+/* @media (max-width:1800px) {
+    .checkbtn{
+        display: none;
+    } */
+    
+}
+@media (max-width:550px) {
+    /* .checkbtn{
+        display: block;
+    }
+    .icon-bar a {
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        height:200px;
+        top:80px;
+        left:0;
+        text-align: center;
+    }  */
+        
+}
+
+/* @media (max-width:991px) {
+    .icon-bar a i {
+        font-size:16px;
+     
+    } */
+    
+/* } */
+
+
+
+
+/* @media (max-width:640px) {
+    .icon-bar a i {
+     font-size: 16px;
+     
+    }
+    
+}
+@media (max-width:540px) {
+    .icon-bar a i {
+     display: none;
+     
+    }
+    
+}
+
+@media (max-width:800px){
+    .imgforhome img{
+        width:90%;
+    }
+
+} */
+
+
+
+
+@media only screen and (max-width : 480px) {
+
+    .icon-bar {
+        margin-left: 100%;
+    }
+
+    .imgforhome img {
+        width: 668px;
+        height: 400px;
+        margin-left: 11%;
+        margin-top: -16%;
+        border-radius: 5%;
+    }
+
+    .hometext{
+        position: relative;
+        left: 23%;
+    }
+    .hometext h1 {
+        width: 111%;
+        top: -4em;
+        left: 49%;
+    }
+
+    .hometext p {
+        font-family: 'Cardo', serif;
+        font-size: 20px;
+        width: 100%;
+        color: #fff;
+        margin-top: 43rem;
+        margin-left: 56%;
+        line-height: 30px;
+    }
+    .btn:hover {
+       
+        margin-left: 79%;
+    }
+
+    .button a{
+        color:#fff;
+        display: flex;
+        width:140px;
+    
+    }
+    
+    .button a:hover{
+        color:#fff;
+    }
+    .btn{
+       padding: 10px 22px; 
+       margin-top: 40px;
+       margin-left: 80%;
+       font-size: 14px;
+       background-color:#F18124;
+    }
+
+    .things h1, h2 {
+        width: 286%;
+        margin-left: 3%;
+    }
+    .cars p {
+        margin-top: 69%;
+    }
+    .car  h1 {
+        margin-top: 56%;
+    }
+
+    .button1 a {
+        margin-left: 42%;
+    }
+
+    .van p {
+        width: 100%;
+        margin-top: 70%;
+    }
+
+    .van h1{
+        margin-top: 56%;
+    }
+
+    .motorbike h1 {
+        margin-top: 56%;
+
+    }
+
+    .motorbike p {
+        width: 100%;
+        margin-top: 70%;
+    }
+
+    
+.construction-machine h1{
+    width: 100%;
+    margin-top: 55%;
+}
+
+.construction-machine p{
+    width: 100%;
+    margin-top: 71%;
+}
+
+
+
+
+
+
+
+
+}
+
