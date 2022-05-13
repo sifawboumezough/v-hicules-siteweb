@@ -16,22 +16,7 @@ body{
    
 }
 
- /* Nav Bar Mobile  */
-     
-    .checkbtn{
-      font-size: 30px;  
-      color: #999999;
-      line-height: 80px;
-      margin-right:40px;
-      cursor: pointer;
-
-    }
-    #check {
-        display: none;
-    }
-
-
-    /* Nav Bar */ 
+ 
 
 .navbar {
     font-size: 14px;
@@ -59,6 +44,15 @@ body{
 
 .icon-bar a i {
     color: blue;
+}
+
+.logo img {
+    width: 250px;
+    height: 89px;
+    border-radius: 60px;
+    position: absolute;
+    left: 4%;
+    top: 1%;
 }
 
 .menu-items{
@@ -211,9 +205,7 @@ body{
 
 }
 
-.contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea ~ span,
 .contactForm .inputBox textarea:valid ~ span
 {
     color: #2e2e33;
@@ -240,6 +232,37 @@ body{
 
 }
 
+
+/* Nav Bar Mobile  */
+     
+.checkbtn{
+    font-size: 30px;  
+    color: #999999;
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+
+  }
+  #check {
+      display: none;
+  }
+
+
+  /* Nav Bar */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 /* Contact Media Querie */
 @media (max-width:1800px) {
